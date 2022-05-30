@@ -10,8 +10,16 @@ public class ScannerMain {
 		Scanner sc = new Scanner(System.in); //참조자료형이니까 대문자시작, 그리고 new를 통해 써야함
 		
 		
+		
+		
+		System.out.print("정수를 하나 입력하세요 : ");
+		int a = sc.nextInt(); //키보드로 입력받은 정수를 출력하고 싶을 때 사용하는 메소드
+		
+		System.out.println("a : " + a);
 		System.out.print("문자열을 입력 : ");
-		String str = sc.nextLine();
+		String str = sc.nextLine(); // 엔터
+		str = sc.nextLine(); // 입력받은 문자열
+		
 		System.out.println("str : " + str);
 		//next는 문자 단위 하나하나로 인식함
 		//그래서 문자열을 Hello World를 치면 Hello만 인식
@@ -26,11 +34,6 @@ public class ScannerMain {
 		System.out.println("문자열을 입력 : ");
 		char ch = sc.nextLine().charAt(0);   //이 메소드 생긴건 그냥 암기
 		System.out.println("ch : " + ch);
-		
-		
-		System.out.print("정수를 하나 입력하세요 : ");
-		int a = sc.nextInt(); //키보드로 입력받은 정수를 출력하고 싶을 때 사용하는 메소드
-		System.out.println("a : " + a);
 		
 		
 		sc.close();
